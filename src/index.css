@@ -1,0 +1,95 @@
+/* Page background */
+body {
+  background-color: #12162b;
+}
+
+/* Main title */
+.app-title {
+  color: #e8eaf6;
+  font-weight: 600;
+}
+
+/* Cards: set the text colour so labels, totals etc. are readable on dark */
+.app-card {
+  background-color: #1c2140;
+  color: #e8eaf6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Muted text (e.g. "No feedback submitted yet.") */
+.app-card .text-muted {
+  color: #aab1d1 !important;
+}
+
+/* Divider line above "Total feedbacks" */
+.app-card hr {
+  border-color: #e8eaf6;
+  opacity: 0.2;
+}
+
+/* Section headings inside cards */
+.card-heading {
+  color: #e8eaf6;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3a4272;
+}
+
+/* Star rows */
+.star-label {
+  color: #f59e0b;
+  /* gold stars */
+}
+
+/* Feedback list rows: dark instead of Bootstrap's default white */
+.list-group {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-color: #e8eaf6;
+  --bs-list-group-border-color: #3a4272;
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #e8eaf6;
+  transition: background-color 0.15s;
+}
+
+.list-group-item:hover:not(.active) {
+  background-color: #262c52;
+}
+
+/* Form fields: dark to match the cards */
+.app-card .form-control,
+.app-card .form-select {
+  background-color: #12162b;
+  color: #e8eaf6;
+  border: 1px solid #3a4272;
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e8eaf6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* Light dropdown arrow (Bootstrap's default arrow is dark) */
+.app-card .form-select {
+  background-image: var(--bs-form-select-bg-img);
+}
+
+.app-card .form-control::placeholder {
+  color: #8a92b8;
+}
+
+.app-card .form-control:focus,
+.app-card .form-select:focus {
+  background-color: #12162b;
+  color: #e8eaf6;
+  border-color: #6c8cff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 140, 255, 0.25);
+}
+
+.app-card .form-control.is-invalid {
+  border-color: #ff6b81;
+}
+
+.app-card .form-select option {
+  background-color: #1c2140;
+  color: #e8eaf6;
+}
